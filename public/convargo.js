@@ -90,24 +90,25 @@ let CONVARGO = (() => {
 
     var actors = [{
       'who': 'shipper',
-      'type': 'debit',
-      'amount': price + deductibleOption
+      'type': 'debit : ',
+      'amount': price + deductibleOption +" "+'\u20AC'
     }, {
       'who': 'trucker',
-      'type': 'credit',
-      'amount': price - commission.value
+      'type': 'credit : ',
+      'amount': price - commission.value +" "+'\u20AC'
     }, {
       'who': 'insurance',
-      'type': 'credit',
-      'amount': commission.insurance
+      'type': 'credit : ',
+      'amount': commission.insurance +" "+'\u20AC'
     }, {
       'who': 'treasury',
-      'type': 'credit',
-      'amount': commission.treasury
+      'type': 'credit : ',
+      'amount': commission.treasury +" "+'\u20AC'
     }, {
       'who': 'convargo',
-      'type': 'credit',
-      'amount': commission.convargo + deductibleOption
+      'type': 'credit : ',
+      'amount': commission.convargo +deductibleOption +" "+'\u20AC' + " ( whose "+deductibleOption+" "+'\u20AC'+
+                " of deductible Option )"
     }];
 
     return actors;
