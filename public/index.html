@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
   </head>
   <body>
+    <img src="convargo.jpg" style="width:20%;">
+    <p>Welcome to Convargo site</p>
+    <p>Truckers</p>
     <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
+      <p></p>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
+      <p></p>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
     </div>
+    <p>Shipper</p>
     <div id="shipper">
       <input class="name" type="text" placeholder="Shipper name"/>
+      <p></p>
       <input class="distance" type="number" placeholder="Distance in km"/>
+      <p></p>
       <input class="volume" type="number" placeholder="Volume in m3"/>
+      <p>Deductible options
       <input class="option" type="checkbox" placeholder="Deductible option"/>
+      </p>
     </div>
-    <button id="compute">Compute</button>
+    <p></p>
+    <button id="compute">price estimate</button>
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
